@@ -70,7 +70,7 @@ const account = {
    */
   getTransactionDetails(id) {
     for (const transactionId of this.transactions)
-      if ((transactionId.id = id)) {
+      if (transactionId.id === id) {
         return console.log(transactionId);
       }
   },

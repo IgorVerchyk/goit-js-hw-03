@@ -1,10 +1,7 @@
 const countProps = function (obj) {
   const values = Object.values(obj);
-  let total = 0;
-  for (let i = 0; i < values.length; i += 1) {
-    total += 1;
-  }
-  return total;
+
+  return values.length;
 };
 
 console.log(countProps({})); // 0
